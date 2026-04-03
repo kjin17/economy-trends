@@ -112,7 +112,7 @@ def build_message(results):
                 price_str = format_number(price, 2)
                 change_str = f"{change:+.2f}"
 
-            arrow = "🔺" if change > 0 else "🔻" if change < 0 else "➖"
+            arrow = "🔺" if change > 0 else "🔵" if change < 0 else "➖"
             lines.append(
                 f"  {name}: {price_str} {arrow} {change_str} ({change_pct:+.2f}%)"
             )
